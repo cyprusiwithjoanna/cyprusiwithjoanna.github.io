@@ -327,6 +327,57 @@
 .social-links a:hover {
   color: #3a64b0; /* Blue hover effect */
 }
+/* Header base tweaks */
+header {
+  position: sticky; top: 0; z-index: 1000;
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 2px solid #eee;
+  gap: 1rem;
+}
+.nav-links { display: flex; align-items: center; }
+.nav-links a { margin-left: 1.5rem; white-space: nowrap; }
+
+/* Mobile menu button (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: .4rem .7rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .logo-img { height: 48px; margin-top: 0; }
+  /* Show the button, hide nav by default */
+  .menu-toggle { display: inline-block; }
+  .nav-links {
+    position: absolute;
+    right: 1rem;
+    top: 72px; /* sits below header */
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    width: 220px;
+    padding: .75rem;
+    display: none;      /* hidden until opened */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .4rem;
+  }
+  .nav-links a {
+    margin: 0;          /* no left margin in dropdown */
+    padding: .25rem 0;
+    width: 100%;
+  }
+  .nav-links.open { display: flex; }  /* toggled state */
+}
+
 
 
 
@@ -353,18 +404,25 @@
 </head>
 <body>
 
-  <header>
-    <a href="index.html">
-  <img src="logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
-</a>
-   <nav>
-  <a href="about-us.html">About Us</a>
-  <a href="our-tours.html">Our Tours</a>
-  <a href="photos.html">Photos</a>
-  <a href="contact1.html">Contact</a>
-</nav>
+<header>
+  <a href="index.html">
+    <img src="logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
+  </a>
 
-  </header>
+  <!-- Mobile menu button -->
+  <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+    Menu ☰
+  </button>
+
+  <!-- Primary nav -->
+  <nav id="primary-nav" class="nav-links">
+    <a href="about-us.html">About Us</a>
+    <a href="our-tours.html">Our Tours</a>
+    <a href="photos.html">Photos</a>
+    <a href="contact1.html">Contact</a>
+  </nav>
+</header>
+
 
   <section class="hero">
     <h1>Explore Cyprus with us</h1>
@@ -486,4 +544,26 @@
 </section>
 
 </body>
+
+<script>
+  (function () {
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+      // Close the menu if resizing back to desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  })();
+</script>
+
 </html>
