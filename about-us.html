@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Cyprus with Joanna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #ffffff;
+      color: #2b2344;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #eee;
+    }
+
+    .logo-img {
+      height: 65px;
+      object-fit: contain;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .two-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+  .two-columns img {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;     /* ✅ Prevents huge image sizes */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+    .two-columns div {
+      flex: 1;
+    }
+
+    h2 {
+      color: #3a64b0;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: #3a64b0;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .two-columns {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
+    </a>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="our-tours.html">Our Tours</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact1.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="two-columns">
+      <img src="joanna1.jpg" alt="Joanna in garden" />
+      <div>
+        <h2>Joanna's journey</h2>
+        <h3>Tourist guide in Dutch, English and Greek</h3>
+        <p>
+          Joanna is a certified tour guide with over 30 years of experience leading tours across Cyprus. 
+          She completed her education and earned her tour guide diploma in the Netherlands, where she spent 
+          part of her youth, and obtained the equivalent certification from the Cyprus Ministry of Tourism 
+          when she returned to her homeland.
+        </p>
+        <p>
+          Coming from a family of archaeologists, she has a strong connection to the island’s history and culture, 
+          which she shares with enthusiasm.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="two-columns">
+      <div>
+        <p>
+          Joanna believes that the best way to experience Cyprus is through interactive and participatory tours, 
+          allowing visitors to actively engage with the island’s culture, history, and nature.
+        </p>
+        <p>
+          In her free time, she works as a beekeeper—one of the few women in Cyprus doing this—and runs a small 
+          farm with chickens, fruit trees, and plants. She’s also a mom of three and the owner of three dogs.
+        </p>
+        <p>
+          If you’re interested, Joanna can arrange a beekeeping tour where you’ll learn about the process and enjoy 
+          a honey tasting with her own locally produced honey.
+        </p>
+      </div>
+      <img src="joanna2.JPG" alt="Joanna sculpting" />
+    </div>
+  </section>
+
+</body>
+</html>

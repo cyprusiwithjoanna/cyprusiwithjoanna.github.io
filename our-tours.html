@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Our Tours — Cyprus with Joanna</title>
+<style>
+  :root{ --blue:#3a64b0; --purple:#2b2344; --green:#5e9f45; --cream:#faf7ef; --ink:#222; }
+
+  *{ box-sizing:border-box }
+  body{ margin:0; font-family:Georgia, serif; color:var(--ink); background:#fff; }
+
+  header{
+    background:#fff; border-bottom:2px solid #eee; padding:1rem 2rem;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .logo-img{ height:65px; object-fit:contain; margin-top:5px; }
+  nav a{ margin-left:1.5rem; text-decoration:none; color:#333; font-weight:bold; }
+
+  .wrap{ max-width:1200px; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  h1{ text-align:center; margin:0 0 2rem; font-size:clamp(1.9rem,3.5vw,2.6rem); color:#2b2b2b; }
+
+  /* Card grid */
+  .list{ display:grid; gap:1.75rem; }
+  .card{
+    display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;
+    background:var(--cream); padding:1.25rem; border-radius:10px;
+    text-decoration:none; color:inherit; border:1px solid #f0eadf;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .card:hover{ transform: translateY(-1px); box-shadow:0 10px 30px rgba(0,0,0,.06); }
+
+  .media{
+    border-radius:8px; overflow:hidden; background:#ddd;
+    min-height:260px; max-height:360px;
+  }
+  .media img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+  .content{ display:flex; flex-direction:column; justify-content:center; padding:.25rem; }
+  .title{
+    color:var(--green); margin:0 0 .5rem; line-height:1.2;
+    font-size:clamp(1.35rem,2.2vw,2rem); font-weight:700;
+  }
+  .meta{ margin:.2rem 0 1rem; color:#30243f; font-weight:700; font-size:1rem; }
+  .cta{
+    align-self:flex-start; margin-top:auto;
+    background:var(--purple); color:#fff; font-weight:700;
+    padding:.55rem 1rem; border-radius:6px;
+  }
+
+  @media (max-width: 900px){
+    .card{ grid-template-columns:1fr; }
+    .media{ max-height:260px; min-height:220px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html"><img src="logo1.png" alt="Cyprus with Joanna" class="logo-img"></a>
+  <nav>
+    <a href="about-us.html">About Us</a>
+    <a href="our-tours.html">Our Tours</a>
+    <a href="photos.html">Photos</a>
+    <a href="contact1.html">Contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1>Our Tours</h1>
+
+  <div class="list">
+
+    <!-- Culture Escape -->
+    <a class="card" href="tour-culture-escape.html">
+      <div class="media"><img src="coffees.jpg" alt="Cyprus Culture Escape: History &amp; Wine"></div>
+      <div class="content">
+        <h2 class="title">Cyprus Culture Escape: History &amp; Wine</h2>
+        <div class="meta">8 hr • From 300 €</div>
+        <div class="cta">More Info</div>
+      </div>
+    </a>
+
+    <!-- Troodos -->
+    <a class="card" href="tour-troodos.html">
+      <div class="media"><img src="mountains.jpg" alt="Troodos mountain tour"></div>
+      <div class="content">
+        <h2 class="title">Troodos mountain tour: Nature &amp; Heritage</h2>
+        <div class="meta">8 hr • From 300 €</div>
+        <div class="cta">More Info</div>
+      </div>
+    </a>
+
+    <!-- Paphos -->
+    <a class="card" href="tour-paphos.html">
+      <div class="media"><img src="trees.jpg" alt="Paphos highlights &amp; Traditional cuisine"></div>
+      <div class="content">
+        <h2 class="title">Paphos highlights &amp; Traditional cuisine</h2>
+        <div class="meta">8 hr • From 320 €</div>
+        <div class="cta">More Info</div>
+      </div>
+    </a>
+
+  </div>
+</main>
+</body>
+</html>

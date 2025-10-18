@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyprus with Joanna — Contact</title>
+  <style>
+    :root{
+      --brand-blue:#3a64b0;
+      --brand-purple:#2b2344;
+      --bg-beige:#e9ded7; /* soft beige backdrop */
+      --ink:#222;
+    }
+
+    /* Base */
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Georgia, serif;
+      color:var(--ink);
+      background:var(--bg-beige);
+      line-height:1.6;
+    }
+
+    /* Header */
+    header{
+      background:#fff;
+      border-bottom:2px solid #eee;
+      padding:1rem 2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .logo-img{
+      height:65px; object-fit:contain; margin-top:5px;
+    }
+    nav a{
+      margin-left:1.5rem; text-decoration:none; color:#333; font-weight:bold;
+    }
+    nav a[href="contact.html"]{ color:var(--brand-blue); }
+
+    /* Page container */
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:3.5rem 2rem 4.5rem;
+    }
+
+    /* Heading + intro */
+    h1{
+      margin:0 0 1.25rem;
+      font-size:clamp(2rem, 4vw, 3.2rem);
+      color:var(--brand-blue);
+      letter-spacing:.5px;
+    }
+    .intro{
+      font-size:1.05rem;
+      max-width:980px;
+      margin-bottom:2rem;
+    }
+
+    /* Contact blocks (Phone / Email / Social) */
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:2rem 3rem;
+      margin:2rem 0 1rem;
+    }
+    .contact-grid h3{
+      margin:.25rem 0 .5rem;
+      font-size:1.15rem;
+      color:var(--brand-purple);
+    }
+    .big{
+      font-weight:700;
+      font-size:1.35rem;
+      color:var(--brand-purple);
+    }
+
+    /* Social icons row */
+    .socials{
+      display:flex; align-items:center; gap:1rem; margin-top:.5rem;
+    }
+    .icon-link{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:40px; height:40px; border:2px solid var(--brand-purple);
+      border-radius:50%; text-decoration:none;
+    }
+    .icon-link:hover{ background:#fff; }
+
+    /* Form */
+    form{
+      margin-top:1.25rem;
+      background:#fff;
+      border:2px solid rgba(43,35,68,.25);
+      border-radius:6px;
+      padding:1.25rem;
+      box-shadow:0 5px 25px rgba(0,0,0,.05);
+    }
+    .form-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1rem 1.25rem;
+    }
+    label{ display:block; font-size:.95rem; margin:.3rem 0 .35rem;}
+    input, textarea{
+      width:100%;
+      padding:.9rem 1rem;
+      border:2px solid rgba(43,35,68,.6);
+      border-radius:4px;
+      font-family:Georgia, serif;
+      font-size:1rem;
+      background:#fff;
+      color:#222;
+      outline:none;
+    }
+    input:focus, textarea:focus{ box-shadow:0 0 0 3px rgba(58,100,176,.2); }
+
+    textarea{ grid-column:1/-1; min-height:180px; resize:vertical; }
+
+    .send-row{
+      display:flex; justify-content:flex-end; margin-top:1rem;
+      background:linear-gradient(to top, rgba(43,35,68,.06), transparent);
+      padding:1rem; border-radius:0 0 4px 4px;
+      margin-left:-1.25rem; margin-right:-1.25rem; margin-bottom:-1.25rem;
+    }
+    button{
+      background:var(--brand-purple); color:#fff; border:none;
+      padding:.9rem 2.5rem; border-radius:6px; font-weight:700; font-size:1.05rem;
+      cursor:pointer;
+    }
+    button:hover{ filter:brightness(1.05); }
+    .req{ color:#b04a3a; }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .contact-grid{ grid-template-columns:1fr 1fr; }
+      .form-grid{ grid-template-columns:1fr 1fr; }
+      textarea{ grid-column:1/-1; }
+    }
+    @media (max-width: 640px){
+      .contact-grid{ grid-template-columns:1fr; }
+      .form-grid{ grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
+    </a>
+    <nav>
+      <a href="about-us.html">About Us</a>
+      <a href="our-tours.html">Our Tours</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Contact us to book your tour</h1>
+
+    <p class="intro">
+      The tours on our website are just ideas! Let us know if you have specific requests—whether it’s adjusting
+      pick-up points, making the tour more accessible, or arranging a translator. Contact us, and we’ll create a
+      unique experience just for you!
+    </p>
+
+    <!-- Info blocks -->
+    <section class="contact-grid" aria-label="Contact details">
+      <div>
+        <h3>Phone</h3>
+        <div class="big">+357 99 455545</div>
+      </div>
+
+      <div>
+        <h3>Email</h3>
+        <div class="big"><a href="mailto:joannageorgiou10@gmail.com" style="color:inherit; text-decoration:none;">joannageorgiou10@gmail.com</a></div>
+      </div>
+
+      <div>
+        <h3>Social Media</h3>
+        <div class="socials">
+          <!-- TikTok -->
+          <a class="icon-link" aria-label="TikTok" target="_blank" href="https://www.tiktok.com/@cypruswithjoanna" rel="noopener">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+              <path d="M14.5 3v4.1a6.2 6.2 0 0 0 4.9 2.5v2.5a8.7 8.7 0 0 1-4.9-1.6v5.9A5.5 5.5 0 1 1 9 10.9v2.6a3 3 0 1 0 2.9 3V3h2.6Z" stroke="#2b2344" stroke-width="1.7" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a class="icon-link" aria-label="Instagram" target="_blank" href="https://www.instagram.com/cypruswithjoanna/" rel="noopener">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="4.2" stroke="#2b2344" stroke-width="1.7"/>
+              <circle cx="12" cy="12" r="4" stroke="#2b2344" stroke-width="1.7"/>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="#2b2344"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <form id="contactForm" novalidate>
+      <div class="form-grid">
+        <div>
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" autocomplete="given-name" />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" autocomplete="family-name" />
+        </div>
+        <div>
+          <label for="email">Email <span class="req">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div style="grid-column:1/-1;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+      </div>
+
+      <div class="send-row">
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </main>
+
+  <script>
+    // Very light client-side handling: validates email and opens a prefilled email
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      if(!email){
+        alert('Please enter your email.');
+        document.getElementById('email').focus();
+        return;
+      }
+      const fn = (document.getElementById('firstName').value || '').trim();
+      const ln = (document.getElementById('lastName').value || '').trim();
+      const msg = (document.getElementById('message').value || '').trim();
+
+      const subject = encodeURIComponent('Tour enquiry from website');
+      const body = encodeURIComponent(
+        `Name: ${fn} ${ln}\nEmail: ${email}\n\nMessage:\n${msg}`
+      );
+      window.location.href = `mailto:joannageorgiou10@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>

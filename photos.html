@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyprus with Joanna - Photos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #eee;
+    }
+
+    .logo-img {
+      height: 65px;
+      object-fit: contain;
+      margin-top: 5px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #3a64b0;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
+    </a>
+    <nav>
+      <a href="about-us.html">About Us</a>
+      <a href="our-tours.html">Our Tours</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact1.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Photos Taken by Our Clients</h2>
+
+    <div class="gallery">
+      <a href="#img1"><img src="image1.jpg" alt="Client photo 1"></a>
+      <a href="#img2"><img src="image2.jpg" alt="Client photo 2"></a>
+      <a href="#img3"><img src="image3.jpg" alt="Client photo 3"></a>
+      <a href="#img4"><img src="image4.jpg" alt="Client photo 4"></a>
+      <a href="#img5"><img src="image5.jpg" alt="Client photo 5"></a>
+      <a href="#img6"><img src="image6.jpg" alt="Client photo 6"></a>
+      <a href="#img7"><img src="image7.jpg" alt="Client photo 7"></a>
+      <a href="#img8"><img src="image8.jpg" alt="Client photo 8"></a>
+      <a href="#img9"><img src="image9.jpg" alt="Client photo 9"></a>
+      <a href="#img10"><img src="image10.jpg" alt="Client photo 10"></a>
+      <a href="#img11"><img src="image11.jpg" alt="Client photo 11"></a>
+      <a href="#img12"><img src="image12.jpg" alt="Client photo 12"></a>
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+  <!-- Lightbox views -->
+  <div id="img1" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo1.jpg" alt="">
+  </div>
+
+  <div id="img2" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo2.jpg" alt="">
+  </div>
+
+  <div id="img3" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo3.jpg" alt="">
+  </div>
+
+  <div id="img4" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo4.jpg" alt="">
+  </div>
+
+  <div id="img5" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo5.jpg" alt="">
+  </div>
+  
+   <div id="img6" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo6.jpg" alt="">
+  </div>
+  
+   <div id="img7" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo7.jpg" alt="">
+  </div>
+  
+   <div id="img8" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo8.jpg" alt="">
+  </div>
+  
+   <div id="img9" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo9.jpg" alt="">
+    </div>
+     <div id="img10" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo10.jpg" alt="">
+    </div>
+     <div id="img11" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo11.jpg" alt="">
+    </div>
+    
+    <div id="img12" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="photo12.jpg" alt="">
+    </div>
+   
+
+</body>
+</html>
