@@ -1,4 +1,489 @@
-<!doctype html><meta charset="utf-8">
-<title>Neocities sanity check</title>
-<h1>It works ✅</h1>
-<p>If you can see this, Neocities is serving index.html correctly.</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title + SEO Description -->
+  <title>Cyprus with Joanna — Authentic Tours in Cyprus</title>
+  <meta name="description" content="Join Joanna, a licensed local guide, on authentic tours across Cyprus. Discover hidden villages, traditional cuisine, history, and culture with a personal touch." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://cypruswithjoanna.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph (Facebook/LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cyprus with Joanna" />
+  <meta property="og:title" content="Cyprus with Joanna — Authentic Tours in Cyprus" />
+  <meta property="og:description" content="Join Joanna, a licensed local guide, on authentic tours across Cyprus. Discover hidden villages, traditional cuisine, history, and culture with a personal touch." />
+  <meta property="og:url" content="https://cypruswithjoanna.com/" />
+  <meta property="og:image" content="https://cypruswithjoanna.com/introphoto.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cyprus with Joanna — Authentic Tours in Cyprus" />
+  <meta name="twitter:description" content="Join Joanna, a licensed local guide, on authentic tours across Cyprus. Discover hidden villages, traditional cuisine, history, and culture with a personal touch." />
+  <meta name="twitter:image" content="https://cypruswithjoanna.com/introphoto.jpg" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index,follow" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYXHZK0J9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FYXHZK0J9Q');
+  </script>
+
+  <!-- JSON-LD Schema for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristInformationCenter",
+    "name": "Cyprus with Joanna",
+    "description": "Authentic guided tours in Cyprus with Joanna, a licensed local guide. Explore culture, history, villages, and cuisine.",
+    "image": "https://cypruswithjoanna.com/introphoto.jpg",
+    "url": "https://cypruswithjoanna.com/",
+    "sameAs": [
+      "https://www.instagram.com/cypruswithjoanna/",
+      "https://www.tiktok.com/@cypruswithjoanna"
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Cyprus"
+    }
+  }
+  </script>
+
+
+
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #222;
+  }
+
+  header {
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+  }
+
+  .logo-img {
+    height: 65px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .hero {
+    background: url('introphoto.jpg') no-repeat center center/cover;
+    height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
+
+  .hero a {
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    background: white;
+    color: #3a64b0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+
+  .hero a:hover {
+    background: #f0f0f0;
+  }
+
+  .section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .section h2 {
+    color: #3a64b0;
+    letter-spacing: 1px;
+  }
+
+  .section p {
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .two-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .two-columns p {
+    flex: 1;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .gallery img {
+    width: 30%;
+    border-radius: 8px;
+  }
+
+  /* ✅ TOUR CARD STYLES (Always Apply) */
+  .tour-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tour-card {
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tour-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .tour-content {
+    padding: 1rem;
+  }
+
+  .tour-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tour-content p {
+    margin: 0.3rem 0;
+  }
+
+  .tour-content a {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #2b2344;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .tour-content a:hover {
+    background: #4a3e6d;
+  }
+
+  .testimonial-section {
+  background: #fdf5f2;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: Georgia, serif;
+}
+.testimonial-section h2 {
+  color: #3a64b0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.arrow {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ab494;
+}
+
+
+
+.testimonial {
+  flex: 1;
+  max-width: 600px;
+  background: none;
+}
+
+.testimonial p {
+  margin: 1rem 0;
+}
+
+#review-text {
+  font-size: 1.3rem;
+  color: #2d1e46;
+  font-weight: bold;
+}
+
+#review-author {
+  font-size: 1rem;
+  color: #999;
+}
+.contact-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: 'Georgia', serif;
+}
+
+.contact-section h2 {
+  color: #3a64b0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.contact-box {
+  border: 3px solid #2b2344;
+  padding: 2rem;
+  display: inline-block;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 6px;
+  color: #2b2344;
+}
+
+.contact-box p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.contact-box a {
+  color: #2b2344;
+  text-decoration: none;
+}
+
+.social-links {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2b2344;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #3a64b0; /* Blue hover effect */
+}
+
+
+
+
+ /* ✅ MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .two-columns {
+      flex-direction: column;
+    }
+
+    .gallery img {
+      width: 100%;
+    }
+
+
+
+  }
+</style>
+
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+  <img src="logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
+</a>
+   <nav>
+  <a href="about-us.html">About Us</a>
+  <a href="our-tours.html">Our Tours</a>
+  <a href="photos.html">Photos</a>
+  <a href="contact1.html">Contact</a>
+</nav>
+
+  </header>
+
+  <section class="hero">
+    <h1>Explore Cyprus with us</h1>
+    <a href="#">View All Tours →</a>
+  </section>
+
+  <section class="section">
+    <h2>About Our Tours</h2>
+    <div class="two-columns">
+      <p>
+        Cyprus is a land of vibrant traditions, breathtaking landscapes, and a rich tapestry of history. The tours are crafted to give you a genuine connection to the island, going beyond the surface to offer experiences that are immersive and unforgettable. You might find yourself learning how to make halloumi cheese alongside locals in a small village, experimenting with traditional crafts that have been passed down for generations, or walking through ancient ruins while hearing the stories that shaped them. Every detail is thoughtfully planned to showcase the Cyprus that locals cherish—the one filled with authentic flavors, captivating beauty, and a deep sense of heritage.
+      </p>
+      <p>
+        Guided by someone with a lifelong connection to Cyprus, these tours offer a perspective that only a local can provide. The island’s natural beauty, cultural richness, and historical depth come alive in every experience. Whether you're savoring fresh local cuisine, hiking through dramatic landscapes, or wandering through centuries-old villages, the aim is to give you more than just memories—it’s about fostering a true appreciation for this remarkable island. Each journey is infused with a personal touch, ensuring that you feel not like a visitor, but a part of Cyprus’ story.
+      </p>
+    </div>
+
+  </section>
+  
+  <section class="section">
+  <h2>Our Tours</h2>
+
+  <div class="tour-cards">
+
+    <div class="tour-card">
+    <img src="coffees.jpg" alt="Coffee tour" />
+      <div class="tour-content">
+        <h3>Cyprus Culture Escape: History & Wine</h3>
+        <p>8 hr</p>
+        <p>From 300 €</p>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="mountains.jpg" alt="Troodos tour">
+      <div class="tour-content">
+        <h3>Troodos mountain tour: Nature & Heritage</h3>
+        <p>8 hr</p>
+        <p>From 300 €</p>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+
+    
+    <div class="tour-card">
+      <img src="trees.jpg" alt="Paphos Tour" />
+      <div class="tour-content">
+        <h3>Paphos highlights & Traditional cuisine</h3>
+        <p>8 hr</p>
+        <p>From 300 €</p>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="testimonial-section">
+  <h2>Tour Reviews</h2>
+  <div class="testimonial-container">
+    <button class="arrow" onclick="changeReview(-1)">&#10094;</button>
+    
+    <div class="testimonial">
+      <p id="review-text">"Joanna is the perfect guide—warm, knowledgeable, and passionate about Cyprus..."</p>
+      <p id="review-author">— Eva and Tom, Holland</p>
+    </div>
+
+    <button class="arrow" onclick="changeReview(1)">&#10095;</button>
+  </div>
+</section>
+
+
+<script>
+  const reviews = [
+    {
+      text: `"Joanna is the perfect guide—warm, knowledgeable, and passionate about Cyprus. We enjoyed every moment, from exploring ancient ruins to tasting local delicacies. It felt like we were discovering the island through the eyes of a true local. We’ll definitely be back!"`,
+      author: "— Eva and Tom, Holland"
+    },
+    {
+      text: `"One of the best experiences we've had in Europe. Joanna brought the history of Cyprus to life. Highly recommend her tour!"`,
+      author: "— Daniel & Maria, Spain"
+    },
+    {
+      text: `"From the food to the scenic walks, everything was amazing. Joanna made us feel at home."`,
+      author: "— Claire, UK"
+    },
+    {
+      text: `"A heartfelt, authentic experience. Not your average tourist trap. Loved every minute!"`,
+      author: "— Lisa and Mark, Canada"
+    }
+  ];
+
+  let currentReview = 0;
+
+  function changeReview(direction) {
+    currentReview += direction;
+    if (currentReview < 0) currentReview = reviews.length - 1;
+    if (currentReview >= reviews.length) currentReview = 0;
+
+    document.getElementById('review-text').textContent = reviews[currentReview].text;
+    document.getElementById('review-author').textContent = reviews[currentReview].author;
+  }
+</script>
+
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p>+357 99455545</p>
+    <p><a href="mailto:joannageorgiou10@gmail.com">joannageorgiou10@gmail.com</a></p>
+    <div class="social-links">
+  <a href="https://www.tiktok.com/@cypruswithjoanna" target="_blank">TikTok</a>
+  <a href="https://www.instagram.com/cypruswithjoanna/" target="_blank">Instagram</a>
+</div>
+
+
+  </div>
+</section>
+
+</body>
+</html>
