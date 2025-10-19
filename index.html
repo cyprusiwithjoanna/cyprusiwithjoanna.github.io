@@ -389,7 +389,7 @@ header {
 
 
 
- /* ✅ MEDIA QUERIES */
+ /* MEDIA QUERIES */
   @media (max-width: 768px) {
     .hero h1 {
       font-size: 2rem;
@@ -412,27 +412,21 @@ header {
 <body>
 
 <header>
-  <a href="index.html">
+  <a href="index.html" class="logo-area">
     <img src="logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
   </a>
 
-  <!-- Mobile menu button -->
-  <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
-    Menu ☰
-  </button>
-
-  <!-- Primary nav -->
-  <nav id="primary-nav" class="nav-links">
+  <nav class="nav-links">
     <a href="about-us.html">About Us</a>
     <a href="our-tours.html">Our Tours</a>
     <a href="photos.html">Photos</a>
     <a href="contact1.html">Contact</a>
   </nav>
 
-   <!-- Languages -->
-  <span class="lang-switch"><a href="/nl/">Nederlands</a></span>
-<style>.lang-switch a{font-weight:bold;margin-left:1rem;text-decoration:none}</style>
-
+  <div class="lang-switch">
+    <a href="/" class="lang">EN</a>
+    <a href="/nl/" class="lang">NL</a>
+  </div>
 </header>
 
   
