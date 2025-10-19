@@ -4,177 +4,591 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Cyprus with Joanna — Authentieke rondleidingen op Cyprus</title>
-  <meta name="description" content="Ga mee met Joanna, een gediplomeerde lokale gids, voor authentieke tours op Cyprus. Ontdek dorpen, traditionele keuken, geschiedenis en cultuur met een persoonlijke touch." />
-
-  <!-- Canonical & alternates -->
-  <link rel="canonical" href="https://cypruswithjoanna.com/nl/" />
   <link rel="alternate" href="https://cypruswithjoanna.com/" hreflang="en" />
   <link rel="alternate" href="https://cypruswithjoanna.com/nl/" hreflang="nl" />
   <link rel="alternate" href="https://cypruswithjoanna.com/" hreflang="x-default" />
 
+  <!-- Page Title + SEO Description -->
+  <title>Cyprus met Joanna — Authentieke Tours op Cyprus</title>
+  <meta name="description" content="Ga mee met Joanna, een erkende lokale gids, op authentieke tours over Cyprus. Ontdek verborgen dorpjes, traditionele keuken, geschiedenis en cultuur — met een persoonlijke touch." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://cypruswithjoanna.com/nl/" />
+
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph (Facebook/LinkedIn) -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Cyprus with Joanna" />
-  <meta property="og:title" content="Cyprus with Joanna — Authentieke rondleidingen op Cyprus" />
-  <meta property="og:description" content="Authentieke tours met een lokale gids: dorpen, natuur, keuken en cultuur." />
+  <meta property="og:site_name" content="Cyprus met Joanna" />
+  <meta property="og:title" content="Cyprus met Joanna — Authentieke Tours op Cyprus" />
+  <meta property="og:description" content="Ga mee met Joanna, een erkende lokale gids, op authentieke tours over Cyprus. Ontdek verborgen dorpjes, traditionele keuken, geschiedenis en cultuur — met een persoonlijke touch." />
   <meta property="og:url" content="https://cypruswithjoanna.com/nl/" />
   <meta property="og:image" content="https://cypruswithjoanna.com/introphoto.jpg" />
 
-  <!-- Twitter -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cyprus with Joanna — Authentieke rondleidingen op Cyprus" />
-  <meta name="twitter:description" content="Authentieke tours met een lokale gids: dorpen, natuur, keuken en cultuur." />
+  <meta name="twitter:title" content="Cyprus met Joanna — Authentieke Tours op Cyprus" />
+  <meta name="twitter:description" content="Ga mee met Joanna, een erkende lokale gids, op authentieke tours over Cyprus. Ontdek verborgen dorpjes, traditionele keuken, geschiedenis en cultuur — met een persoonlijke touch." />
   <meta name="twitter:image" content="https://cypruswithjoanna.com/introphoto.jpg" />
 
+  <!-- Robots -->
   <meta name="robots" content="index,follow" />
 
-  <style>
-    body{margin:0;font-family:'Georgia',serif;line-height:1.6;background:#fff;color:#222}
-    header{position:sticky;top:0;z-index:1000;background:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #eee;gap:1rem}
-    .logo-img{height:65px;object-fit:contain}
-    .nav-links{display:flex;align-items:center}
-    .nav-links a{margin-left:1.5rem;text-decoration:none;color:#333;font-weight:bold;white-space:nowrap}
-    .menu-toggle{display:none;border:1px solid #ccc;background:#fff;padding:.45rem .75rem;border-radius:8px;font-weight:700;cursor:pointer}
-    .lang-switch a{margin-left:1rem;text-decoration:none;font-weight:bold}
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYXHZK0J9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FYXHZK0J9Q');
+  </script>
 
-    .hero{background:url('/introphoto.jpg') no-repeat center center/cover;height:90vh;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 2rem}
-    .hero h1{font-size:3rem;margin:.5rem 0}
-    .hero a{margin-top:2rem;padding:.5rem 1.5rem;background:#fff;color:#3a64b0;text-decoration:none;font-weight:bold;border-radius:30px;display:inline-block;transition:background .3s}
-    .hero a:hover{background:#f0f0f0}
-
-    .section{padding:4rem 2rem;max-width:1000px;margin:auto}
-    .section h2{color:#3a64b0;letter-spacing:1px}
-    .two-columns{display:flex;gap:2rem;flex-wrap:wrap}
-    .two-columns p{flex:1;text-align:justify}
-
-    .tour-cards{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center}
-    .tour-card{width:280px;border:1px solid #ccc;border-radius:8px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.05);background:#fff;display:flex;flex-direction:column}
-    .tour-card img{width:100%;height:300px;object-fit:cover;display:block}
-    .tour-content{padding:1rem}
-    .tour-content h3{font-size:1.1rem;margin-bottom:.5rem}
-    .tour-content p{margin:.3rem 0}
-    .tour-content a{display:inline-block;margin-top:1rem;background:#2b2344;color:#fff;padding:.4rem .8rem;text-decoration:none;border-radius:4px;font-weight:bold;font-size:.9rem}
-    .tour-content a:hover{background:#4a3e6d}
-
-    .testimonial-section{background:#fdf5f2;text-align:center;padding:4rem 2rem}
-    .testimonial-section h2{color:#3a64b0;text-transform:uppercase;letter-spacing:1px;font-size:1.2rem;margin-bottom:1.5rem;font-weight:bold}
-
-    .contact-section{text-align:center;padding:4rem 2rem}
-    .contact-box{border:3px solid #2b2344;padding:2rem;display:inline-block;max-width:400px;margin:auto;border-radius:6px;color:#2b2344}
-
-    @media(max-width:768px){
-      .logo-img{height:48px}
-      .menu-toggle{display:inline-block}
-      .nav-links{position:absolute;right:1rem;top:72px;background:#fff;border:1px solid #e6e6e6;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.08);width:220px;padding:.75rem;display:none;flex-direction:column;align-items:flex-start;gap:.4rem}
-      .nav-links a{margin:0;padding:.25rem 0;width:100%}
-      .nav-links.open{display:flex}
-      .hero h1{font-size:2rem}
-      .two-columns{flex-direction:column}
+  <!-- JSON-LD Schema for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristInformationCenter",
+    "name": "Cyprus met Joanna",
+    "description": "Authentieke rondleidingen op Cyprus met Joanna, een erkende lokale gids. Ontdek cultuur, geschiedenis, dorpen en keuken.",
+    "image": "https://cypruswithjoanna.com/introphoto.jpg",
+    "url": "https://cypruswithjoanna.com/nl/",
+    "sameAs": [
+      "https://www.instagram.com/cypruswithjoanna/",
+      "https://www.tiktok.com/@cypruswithjoanna"
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Cyprus"
     }
-  </style>
+  }
+  </script>
+
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #222;
+  }
+
+  header {
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+  }
+
+  .logo-img {
+    height: 65px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .hero {
+    background: url('introphoto.jpg') no-repeat center center/cover;
+    height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
+
+  .hero a {
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    background: white;
+    color: #3a64b0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+
+  .hero a:hover {
+    background: #f0f0f0;
+  }
+
+  .section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .section h2 {
+    color: #3a64b0;
+    letter-spacing: 1px;
+  }
+
+  .section p {
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .two-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .two-columns p {
+    flex: 1;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .gallery img {
+    width: 30%;
+    border-radius: 8px;
+  }
+
+  /* TOUR CARD STYLES (Always Apply) */
+  .tour-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tour-card {
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tour-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .tour-content {
+    padding: 1rem;
+  }
+
+  .tour-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tour-content p {
+    margin: 0.3rem 0;
+  }
+
+  .tour-content a {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #2b2344;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .tour-content a:hover {
+    background: #4a3e6d;
+  }
+
+  .testimonial-section {
+    background: #fdf5f2;
+    text-align: center;
+    padding: 4rem 2rem;
+    font-family: Georgia, serif;
+  }
+  .testimonial-section h2 {
+    color: #3a64b0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+
+  .testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .arrow {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9ab494;
+  }
+
+  .testimonial {
+    flex: 1;
+    max-width: 600px;
+    background: none;
+  }
+
+  .testimonial p {
+    margin: 1rem 0;
+  }
+
+  #review-text {
+    font-size: 1.3rem;
+    color: #2d1e46;
+    font-weight: bold;
+  }
+
+  #review-author {
+    font-size: 1rem;
+    color: #999;
+  }
+
+  .contact-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    font-family: 'Georgia', serif;
+  }
+
+  .contact-section h2 {
+    color: #3a64b0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+
+  .contact-box {
+    border: 3px solid #2b2344;
+    padding: 2rem;
+    display: inline-block;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 6px;
+    color: #2b2344;
+  }
+
+  .contact-box p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .contact-box a {
+    color: #2b2344;
+    text-decoration: none;
+  }
+
+  .social-links {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2b2344;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #3a64b0; /* Blue hover effect */
+  }
+
+  /* Header base tweaks */
+  header {
+    position: sticky; top: 0; z-index: 1000;
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 2px solid #eee;
+    gap: 1rem;
+  }
+  .nav-links { display: flex; align-items: center; }
+  .nav-links a { margin-left: 1.5rem; white-space: nowrap; }
+
+  /* Mobile menu button (hidden on desktop) */
+  .menu-toggle {
+    display: none;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: .4rem .7rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* Mobile layout */
+  @media (max-width: 768px) {
+    .logo-img { height: 48px; margin-top: 0; }
+    /* Show the button, hide nav by default */
+    .menu-toggle { display: inline-block; }
+    .nav-links {
+      position: absolute;
+      right: 1rem;
+      top: 72px; /* sits below header */
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
+      width: 220px;
+      padding: .75rem;
+      display: none;      /* hidden until opened */
+      flex-direction: column;
+      align-items: flex-start;
+      gap: .4rem;
+    }
+    .nav-links a {
+      margin: 0;          /* no left margin in dropdown */
+      padding: .25rem 0;
+      width: 100%;
+    }
+    .nav-links.open { display: flex; }  /* toggled state */
+  }
+
+  /* Center nav & add language buttons */
+  header {
+    position: sticky; top: 0; z-index: 1000;
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;  /* spread left, center, right */
+    align-items: center;
+    border-bottom: 2px solid #eee;
+  }
+
+  .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;  /* centered menu */
+    gap: 1.5rem;
+  }
+
+  .lang-switch {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .lang-switch .lang {
+    font-size: 0.8rem;
+    color: #777;
+    text-decoration: none;
+    padding: 2px 4px;
+    font-weight: bold;
+  }
+
+  .lang-switch .lang:hover {
+    color: #444;
+  }
+
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .two-columns {
+      flex-direction: column;
+    }
+
+    .gallery img {
+      width: 100%;
+    }
+  }
+</style>
+
 </head>
 <body>
 
-  <header>
-    <a href="/nl/">
-      <img src="/logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
-    </a>
+<header class="site-header">
+  <!-- Left: Logo -->
+  <a href="index.html" class="logo-area">
+    <img src="logo1.png" alt="Cyprus met Joanna logo" class="logo-img" />
+  </a>
 
-    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu ☰</button>
+  <!-- Center: Main navigation -->
+  <nav id="primary-nav" class="nav-links">
+    <a href="about-us.html">Over Ons</a>
+    <a href="our-tours.html">Onze Tours</a>
+    <a href="photos.html">Foto's</a>
+    <a href="contact1.html">Contact</a>
+  </nav>
 
-    <nav id="primary-nav" class="nav-links">
-      <a href="/nl/about-us.html">Over ons</a>
-      <a href="/nl/our-tours.html">Tours</a>
-      <a href="/nl/photos.html">Foto’s</a>
-      <a href="/nl/contact1.html">Contact</a>
-      <span class="lang-switch"><a href="/">English</a></span>
-    </nav>
-  </header>
+  <!-- Right: Language + Mobile toggle -->
+  <div class="header-right">
+    <div class="lang-switch">
+      <a href="/" class="lang">EN</a>
+      <span class="divider">|</span>
+      <a href="/nl/" class="lang active" aria-current="page">NL</a>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu openen">☰</button>
+  </div>
+</header>
 
   <section class="hero">
     <h1>Ontdek Cyprus met ons</h1>
-    <a href="/nl/our-tours.html">Bekijk alle tours →</a>
+    <a href="our-tours.html">Bekijk alle tours →</a>
   </section>
 
   <section class="section">
-    <h2>Over onze tours</h2>
+    <h2>Over Onze Tours</h2>
     <div class="two-columns">
-      <p>Cyprus is een eiland vol tradities, adembenemende landschappen en een rijke geschiedenis. Onze tours geven je een echte band met het eiland: kleine dorpen, lokale smaken, ambachten en verhalen die de plaatsen tot leven brengen.</p>
-      <p>Met de blik van een lokale gids ervaar je natuur, cultuur en erfgoed op een persoonlijke manier. Of je nu geniet van verse keuken, door bergen wandelt of door eeuwenoude dorpjes struint—het gaat om méér dan foto’s; het is een ervaring om te koesteren.</p>
+      <p>
+        Cyprus is een land van levendige tradities, adembenemende landschappen en een rijke geschiedenis. De tours zijn ontworpen om je een echte verbinding met het eiland te geven: verder dan de oppervlakte, met ervaringen die meeslepend en onvergetelijk zijn. Je kunt zomaar in een klein dorp terechtkomen waar je samen met locals halloumi leert maken, traditionele ambachten uitprobeert die al generaties lang worden doorgegeven, of door oude ruïnes wandelen terwijl je de verhalen hoort die ze gevormd hebben. Elk detail is zorgvuldig gepland om het Cyprus te laten zien dat de locals koesteren—vol authentieke smaken, betoverende schoonheid en een sterk gevoel van erfgoed.
+      </p>
+      <p>
+        Begeleid door iemand met een levenslange band met Cyprus bieden deze tours een perspectief dat alleen een local kan geven. De natuurlijke schoonheid, culturele rijkdom en historische diepgang van het eiland komen in elke ervaring tot leven. Of je nu geniet van verse lokale gerechten, wandelt door dramatische landschappen of door eeuwenoude dorpjes struint, het doel is om je meer te geven dan alleen herinneringen—het gaat om het ontwikkelen van echte waardering voor dit bijzondere eiland. Elke reis is doordrenkt met een persoonlijk tintje, zodat je je niet als bezoeker voelt, maar als onderdeel van het verhaal van Cyprus.
+      </p>
     </div>
   </section>
-
+  
   <section class="section">
-    <h2>Onze tours</h2>
+    <h2>Onze Tours</h2>
+
     <div class="tour-cards">
+
       <div class="tour-card">
-        <img src="/coffees.jpg" alt="Koffie en cultuur tour" />
+        <img src="coffees.jpg" alt="Koffietour" />
         <div class="tour-content">
           <h3>Cyprus Culture Escape: Geschiedenis & Wijn</h3>
           <p>8 uur</p>
-          <p>Vanaf €300</p>
-          <a href="#">Meer info</a>
+          <a href="tour-culture-escape.html">Meer Info</a>
         </div>
       </div>
+
       <div class="tour-card">
-        <img src="/mountains.jpg" alt="Troodos gebergte tour">
+        <img src="mountains.jpg" alt="Troodos-tour">
         <div class="tour-content">
-          <h3>Troodos Bergen: Natuur & Erfgoed</h3>
+          <h3>Troodos bergtour: Natuur & Erfgoed</h3>
           <p>8 uur</p>
-          <p>Vanaf €300</p>
-          <a href="#">Meer info</a>
+          <a href="tour-troodos.html">Meer Info</a>
         </div>
       </div>
+
       <div class="tour-card">
-        <img src="/trees.jpg" alt="Paphos hoogtepunten">
+        <img src="trees.jpg" alt="Paphos-tour" />
         <div class="tour-content">
-          <h3>Paphos Highlights & Traditionele keuken</h3>
+          <h3>Paphos hoogtepunten & Traditionele keuken</h3>
           <p>8 uur</p>
-          <p>Vanaf €300</p>
-          <a href="#">Meer info</a>
+          <a href="tour-paphos.html">Meer Info</a>
         </div>
       </div>
+
     </div>
   </section>
 
   <section class="testimonial-section">
-    <h2>Beoordelingen</h2>
-    <p><strong>“Joanna is warm, deskundig en gepassioneerd. We ontdekten Cyprus écht door de ogen van een local.”</strong><br>— Eva en Tom, Nederland</p>
-  </section>
-
-  <section class="contact-section">
-    <h2>Contact</h2>
-    <div class="contact-box">
-      <p>+357 99455545</p>
-      <p><a href="mailto:joannageorgiou10@gmail.com">joannageorgiou10@gmail.com</a></p>
-      <div class="social-links">
-        <a href="https://www.tiktok.com/@cypruswithjoanna" target="_blank" rel="noopener">TikTok</a>
-        <a href="https://www.instagram.com/cypruswithjoanna/" target="_blank" rel="noopener">Instagram</a>
+    <h2>Tourbeoordelingen</h2>
+    <div class="testimonial-container">
+      <button class="arrow" onclick="changeReview(-1)">&#10094;</button>
+      
+      <div class="testimonial">
+        <p id="review-text">"Joanna is de perfecte gids—hartelijk, deskundig en gepassioneerd over Cyprus..."</p>
+        <p id="review-author">— Eva en Tom, Nederland</p>
       </div>
+
+      <button class="arrow" onclick="changeReview(1)">&#10095;</button>
     </div>
   </section>
 
-  <script>
-    (function () {
-      const btn = document.querySelector('.menu-toggle');
-      const nav = document.getElementById('primary-nav');
-      if (btn && nav) {
-        btn.addEventListener('click', () => {
-          const isOpen = nav.classList.toggle('open');
-          btn.setAttribute('aria-expanded', String(isOpen));
-        });
-        window.addEventListener('resize', () => {
-          if (window.innerWidth > 768 && nav.classList.contains('open')) {
-            nav.classList.remove('open');
-            btn.setAttribute('aria-expanded', 'false');
-          }
-        });
-      }
-    })();
-  </script>
+<script>
+  const reviews = [
+    {
+      text: `"Joanna is de perfecte gids—hartelijk, deskundig en gepassioneerd over Cyprus. We hebben van elk moment genoten, van het verkennen van oude ruïnes tot het proeven van lokale lekkernijen. Het voelde alsof we het eiland ontdekten door de ogen van een echte local. We komen zeker terug!"`,
+      author: "— Eva en Tom, Nederland"
+    },
+    {
+      text: `"Een van de beste ervaringen die we in Europa hebben gehad. Joanna bracht de geschiedenis van Cyprus echt tot leven. Haar tour is een absolute aanrader!"`,
+      author: "— Daniel & Maria, Spanje"
+    },
+    {
+      text: `"Van het eten tot de mooie wandelingen—alles was geweldig. Joanna liet ons helemaal thuis voelen."`,
+      author: "— Claire, VK"
+    },
+    {
+      text: `"Een warme, authentieke ervaring. Geen standaard toeristending. Elke minuut genoten!"`,
+      author: "— Lisa en Mark, Canada"
+    }
+  ];
+
+  let currentReview = 0;
+
+  function changeReview(direction) {
+    currentReview += direction;
+    if (currentReview < 0) currentReview = reviews.length - 1;
+    if (currentReview >= reviews.length) currentReview = 0;
+
+    document.getElementById('review-text').textContent = reviews[currentReview].text;
+    document.getElementById('review-author').textContent = reviews[currentReview].author;
+  }
+</script>
+
+<section class="contact-section">
+  <h2>Contacteer Ons</h2>
+  <div class="contact-box">
+    <p>+357 99455545</p>
+    <p><a href="mailto:joannageorgiou10@gmail.com">joannageorgiou10@gmail.com</a></p>
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@cypruswithjoanna" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/cypruswithjoanna/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</section>
+
 </body>
+
+<script>
+  (function () {
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+      // Sluit het menu bij resize naar desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  })();
+</script>
+
 </html>
