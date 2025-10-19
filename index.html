@@ -447,25 +447,31 @@ header {
 </head>
 <body>
 
-<header>
+<header class="site-header">
+  <!-- Left: Logo -->
   <a href="index.html" class="logo-area">
     <img src="logo1.png" alt="Cyprus with Joanna logo" class="logo-img" />
   </a>
 
-  <nav class="nav-links">
+  <!-- Center: Main navigation -->
+  <nav id="primary-nav" class="nav-links">
     <a href="about-us.html">About Us</a>
     <a href="our-tours.html">Our Tours</a>
     <a href="photos.html">Photos</a>
     <a href="contact1.html">Contact</a>
   </nav>
 
-  <div class="lang-switch">
-    <a href="/" class="lang">EN</a>
-    <a href="/nl/" class="lang">NL</a>
+  <!-- Right: Language + Mobile toggle -->
+  <div class="header-right">
+    <div class="lang-switch">
+      <a href="/" class="lang active" aria-current="page">EN</a>
+      <span class="divider">|</span>
+      <a href="/nl/" class="lang">NL</a>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">☰</button>
   </div>
 </header>
 
-  
 
 
   <section class="hero">
