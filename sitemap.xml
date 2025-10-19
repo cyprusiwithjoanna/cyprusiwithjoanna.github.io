@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://cypruswithjoanna.com/</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/"/>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://cypruswithjoanna.com/about-us.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/about-us.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/about-us.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/about-us.html"/>
+  </url>
+  <url>
+    <loc>https://cypruswithjoanna.com/nl/about-us.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/about-us.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/about-us.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/about-us.html"/>
+  </url>
+
+  <!-- Our Tours -->
+  <url>
+    <loc>https://cypruswithjoanna.com/our-tours.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/our-tours.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/our-tours.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/our-tours.html"/>
+  </url>
+  <url>
+    <loc>https://cypruswithjoanna.com/nl/our-tours.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/our-tours.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/our-tours.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/our-tours.html"/>
+  </url>
+
+  <!-- Photos -->
+  <url>
+    <loc>https://cypruswithjoanna.com/photos.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/photos.html"/>
+  </url>
+  <url>
+    <loc>https://cypruswithjoanna.com/nl/photos.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/photos.html"/>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://cypruswithjoanna.com/contact1.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/contact1.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/contact1.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/contact1.html"/>
+  </url>
+  <url>
+    <loc>https://cypruswithjoanna.com/nl/contact1.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/contact1.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/contact1.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/contact1.html"/>
+  </url>
+
+  <!-- Tour: Culture Escape -->
+  <url>
+    <loc>https://cypruswithjoanna.com/tour-culture-escape.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/tour-culture-escape.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/tour-culture-escape.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/tour-culture-escape.html"/>
+  </url>
+  <url>
+    <loc>https://cypruswithjoanna.com/nl/tour-culture-escape.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/tour-culture-escape.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/tour-culture-escape.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/tour-culture-escape.html"/>
+  </url>
+
+  <!-- Tour: Paphos -->
+  <url>
+    <loc>https://cypruswithjoanna.com/tour-paphos.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/tour-paphos.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/tour-paphos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/tour-paphos.html"/>
+  </url>
+  <url>
+    <loc>https://cypruswithjoanna.com/nl/tour-paphos.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/tour-paphos.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/tour-paphos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/tour-paphos.html"/>
+  </url>
+
+  <!-- Tour: Troodos -->
+  <url>
+    <loc>https://cypruswithjoanna.com/tour-troodos.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/tour-troodos.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/tour-troodos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/tour-troodos.html"/>
+  </url>
+  <url>
+    <loc>https://cypruswithjoanna.com/nl/tour-troodos.html</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cypruswithjoanna.com/tour-troodos.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://cypruswithjoanna.com/nl/tour-troodos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cypruswithjoanna.com/tour-troodos.html"/>
+  </url>
+
+</urlset>
