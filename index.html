@@ -385,6 +385,42 @@ header {
   .nav-links.open { display: flex; }  /* toggled state */
 }
 
+    /* Center nav & add language buttons */
+header {
+  position: sticky; top: 0; z-index: 1000;
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;  /* spread left, center, right */
+  align-items: center;
+  border-bottom: 2px solid #eee;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;  /* centered menu */
+  gap: 1.5rem;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-switch .lang {
+  font-size: 0.8rem;
+  color: #777;
+  text-decoration: none;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+
+.lang-switch .lang:hover {
+  color: #444;
+}
+
+
 
 
 
